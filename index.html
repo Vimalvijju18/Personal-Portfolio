@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimmala Vimal Vijju | Futuristic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-text">Nimmala Vimal Vijju</div>
+                <div class="loading-subtitle">Initializing Portfolio...</div>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+            </div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Particle Background -->
+        <canvas id="particles-canvas"></canvas>
+        
+        <!-- Navigation -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="brand-text">Nimmala Vimal Vijju</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#profiles" class="nav-link">Profiles</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <div class="profile-photo-centered">
+                            <div class="profile-image-hero">
+                                <img src="C:\Users\vimal\OneDrive\Pictures\Screenshots\Screenshot 2025-08-14 221928.png" alt="Vimal Vijju" class="profile-img">
+                                <div class="online-status"></div>
+                            </div>
+                        </div>
+                        <span class="name">Nimmala Vimal Vijju</span>
+                        <!-- Download CV Button -->
+                        <div class="cv-download-section">
+                            <a href="https://drive.google.com/file/d/1el-QzIOK0klVny1B8d6tyhRsGmA94P4P/view?usp=sharing" target="_blank" class="btn btn-cv-download">
+                                
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </a>
+                        </div>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typewriter" data-text="Data Analytics | Web Development | UI/UX Designing & Prompt Engineering"></span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/vimalvijju18/" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Vimalvijju18" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            Bachelor of Artificial Intelligence and Data Science at Vishnu Institute of Technology 
+                            with a CGPA of 8.0. I specialize in combining backend development skills in Django 
+                            with modern UI/UX design expertise to create innovative digital solutions.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8.0">0</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="6">0</span>
+                                <span class="stat-label">Certificates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <div class="avatar-placeholder">
+                                     <img src="https://tse3.mm.bing.net/th/id/OIP.EbIJ430t6DpkyFnf6JcITQAAAA?pid=Api&P=0&h=180" alt="Vishnu Institute of Technology" class="profile-image" />
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Vishnu Institute Of Technology</h3>
+                                <p>Artificial Intelligence and Datascience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <div class="skills-content">
+                    <p class="skills-description">
+                        I am a passionate developer specializing in modern web technologies and data science. 
+                        I combine technical expertise with creative problem-solving to build innovative digital solutions.
+                    </p>
+                    <div class="skills-grid-clean">
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-logo-clean">
+                            <span class="skill-name-clean">PYTHON</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-logo-clean">
+                            <span class="skill-name-clean">JAVA</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo-clean">
+                            <span class="skill-name-clean">JAVASCRIPT</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-logo-clean">
+                            <span class="skill-name-clean">HTML</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-logo-clean">
+                            <span class="skill-name-clean">REACT JS</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="skill-logo-clean">
+                            <span class="skill-name-clean">DJANGO</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="skill-logo-clean">
+                            <span class="skill-name-clean">TAILWIND CSS</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-logo-clean">
+                            <span class="skill-name-clean">GITHUB</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-logo-clean">
+                            <span class="skill-name-clean">SQL</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-logo-clean">
+                            <span class="skill-name-clean">MONGODB</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://logos-world.net/wp-content/uploads/2022/02/Microsoft-Power-BI-Symbol.png" alt="Power BI" class="skill-logo-clean">
+                            <span class="skill-name-clean">POWER BI</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Symbol.png" alt="Tableau" class="skill-logo-clean">
+                            <span class="skill-name-clean">TABLEAU</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="skill-logo-clean">
+                            <span class="skill-name-clean">FIGMA</span>
+                        </div>
+                        <div class="skill-item-clean">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD" class="skill-logo-clean">
+                            <span class="skill-name-clean">ADOBE XD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <img src="C:\Users\vimal\OneDrive\Desktop\yubhian_technologies_logo.jpeg" alt="Yubhian Technologies" class="company-logo-marker" />
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h3>UI/UX Intern - Yubhian Technologies LLP</h3>
+                                <p>Designed attendance portal UI, created engaging game interfaces, and collaborated 
+                                effectively using industry-standard tools like Figma & Adobe XD for seamless design workflows.</p>
+                                <div class="experience-skills">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                    <span class="skill-tag">UI Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <img src="C:\Users\vimal\OneDrive\Desktop\image_-2024-01-11T162444.744.webp" alt="Corinzo" class="company-logo-marker" />
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h3>UI/UX Intern - Corinzo Pvt. Ltd</h3>
+                                <p>Designed comprehensive MyBudget app and TeamSync dashboard with focus on clean UI, 
+                                intuitive interaction design, and enhanced usability for optimal user experience.</p>
+                                <div class="experience-skills">
+                                    <span class="skill-tag">UI/UX Design</span>
+                                    <span class="skill-tag">Interaction Design</span>
+                                    <span class="skill-tag">Usability</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="Housing Market Analysis" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Symbol.png" alt="Tableau" style="width:40px; height:25px;">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Housing Market Trends</h3>
+                            <p>Comprehensive data analysis with interactive dashboards for real estate patterns using modern web technologies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Python Flask</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Vimalvijju18" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="Restaurant Management System" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="project-small-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Restaurant Management System</h3>
+                            <p>Full-stack solution with order handling, table scheduling, and digital menu system for restaurants.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <a href="https://github.com/Vimalvijju18" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="CRT Attendance Portal UI" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="project-small-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CRT Attendance Portal UI</h3>
+                            <p>Intuitive and responsive UI design for academic attendance tracking with interactive dashboards.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <a href="https://www.figma.com/design/v9Mypv9ueih8ukpsjGd7hu/attendence?node-id=0-1&t=ejsUGdI3z8eoVXhy-1" target="_blank" class="project-link">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="width:18px; height:18px;">
+                                Figma
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="MyBudget UI" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="project-small-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>MyBudget UI</h3>
+                            <p>Clean, modern personal finance management app UI with expense categorization and visual analytics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Financial UI</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <a href="https://www.figma.com/design/xB0PniJKcf6F9kGj995FhI/MyBudget_Minorproject?node-id=0-1&t=PTU7g4HMSJvyOPZN-1" target="_blank" class="project-link">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="width:18px; height:18px;">
+                                Figma
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="TeamSync Dashboard" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="project-small-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>TeamSync Dashboard</h3>
+                            <p>Team collaboration UI with real-time status updates, Kanban boards, and activity feeds.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Dashboard Design</span>
+                                <span class="tech-tag">Collaboration</span>
+                            </div>
+                            <a href="https://www.figma.com/design/0r9cN45VdYU8HeCvdx4bda/TeamSync_Major-project?node-id=0-1&t=SOhFNEHAWNAZKKEK-1" target="_blank" class="project-link">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="width:18px; height:18px;">
+                                Figma
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image-area">
+                            <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop" alt="Personal Portfolio" class="project-bg-image">
+                            <div class="project-logo-overlay">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="project-small-logo">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>Responsive personal portfolio website built with modern web technologies and interactive animations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Vimalvijju18" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                                <i class="fas fa-external-link-alt external-link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon ai-certificate">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="certificate-date">Jan 2025</div>
+                        </div>
+                        <h3>AI-ML Virtual Internship</h3>
+                        <p class="certificate-provider">EDUSKILLS</p>
+                        <p class="certificate-description">
+                            Completed comprehensive training on supervised & unsupervised ML algorithms, 
+                            data preprocessing, and model evaluation using Python.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1J7rz-3wcesX-mUQVUP7JckmAo3XGm4IS/view" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon python-certificate">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="certificate-date">Apr 2025</div>
+                        </div>
+                        <h3>Python Full Stack Virtual Internship</h3>
+                        <p class="certificate-provider">EDUSKILLS</p>
+                        <p class="certificate-description">
+                            Gained hands-on experience developing RESTful APIs and building full-stack 
+                            web applications with Django, HTML, CSS, and JavaScript.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1fY1aNU2Ajhd-XEYjZVAC1P2BFeZBaQ-o/view" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon tableau-certificate">
+                                <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Symbol.png" alt="Tableau" style="width:50px; height:30px;">
+                            </div>
+                            <div class="certificate-date">Jul 2025</div>
+                        </div>
+                        <h3>Data Analytics with Tableau</h3>
+                        <p class="certificate-provider">SMARTINTERNZ</p>
+                        <p class="certificate-description">
+                            Learned to build interactive dashboards, visualize trends, and perform 
+                            comprehensive business analysis using Tableau.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1C2q8BoBaAwiVJRb81u0bqLEtUpBq8keA/view" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon data-certificate">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="certificate-date">Aug 2025</div>
+                        </div>
+                        <h3>Data Science & Analytics</h3>
+                        <p class="certificate-provider">HP LIFE</p>
+                        <p class="certificate-description">
+                            Covered data science fundamentals, statistical analysis, and visualization 
+                            techniques for effective decision-making.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1AoWTrh8pZ7wedf10ARXhePCM2TK-f1JB/view" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon ibm-certificate">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="certificate-date">Oct 2024</div>
+                        </div>
+                        <h3>Analysing Data with Python</h3>
+                        <p class="certificate-provider">IBM</p>
+                        <p class="certificate-description">
+                            Applied Python libraries like Pandas, NumPy, and Matplotlib to clean, 
+                            analyze, and visualize complex datasets.
+                        </p>
+                        <a href="https://drive.google.com/file/d/17wy_9L3ZPuYS_E1V_nG_0zF9eFR4ygW1/view" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+
+                    <!-- NEW FIGMA CERTIFICATION -->
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon figma-certificate">
+                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="width:28px; height:28px;">
+                            </div>
+                            <div class="certificate-date">Sep 2024</div>
+                        </div>
+                        <h3>UI/UX Design with Figma</h3>
+                        <p class="certificate-provider">UDEMY</p>
+                        <p class="certificate-description">
+                            Mastered advanced Figma techniques for UI/UX design including prototyping, 
+                            component systems, auto-layout, and collaborative design workflows.
+                        </p>
+                        <a href="https://www.udemy.com/certificate/" 
+                           target="_blank" class="certificate-link">
+                            <i class="fas fa-external-link-alt external-link-icon"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profiles Section -->
+        <section id="profiles" class="profiles section">
+            <div class="container">
+                <h2 class="section-title">Professional Profiles</h2>
+                <div class="profiles-content">
+                    <div class="profile-category">
+                        <h3>Technical Profiles</h3>
+                        <div class="profile-grid-clean">
+                            <a href="https://github.com/Vimalvijju18" target="_blank" class="profile-link-clean github-profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://leetcode.com/u/vimalvijju18/" target="_blank" class="profile-link-clean leetcode-profile">
+                                <i class="fas fa-code"></i>
+                            </a>
+
+                            <a href="https://www.geeksforgeeks.org/user/vimalvijju/" target="_blank" class="profile-link-clean gfg-profile">
+                                <i class="fas fa-laptop-code"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="profile-category">
+                        <h3>Social Profiles</h3>
+                        <div class="profile-grid-clean">
+                            <a href="https://www.linkedin.com/in/vimalvijju18" target="_blank" class="profile-link-clean linkedin-profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/_vimalvijju_18" target="_blank" class="profile-link-clean instagram-profile">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="https://x.com/VimalVijju18" target="_blank" class="profile-link-clean twitter-profile">
+                                <img src="C:\Users\vimal\Downloads\twitter-x.svg" alt="Twitter" style="width:20px; height:20px;">
+                            </a>
+
+                            <a href="https://www.snapchat.com/@vimalvijju_18" target="_blank" class="profile-link-clean snapchat-profile">
+                                <i class="fab fa-snapchat"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. 
+                        Feel free to reach out if you'd like to collaborate!</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <img src="C:\Users\vimal\Downloads\png-transparent-gmail-new-logo-icon-removebg-preview.png" alt="Email" style="width:28px; height:28px;">
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:vimalvijju18@gmail.com">vimalvijju18@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <img src="C:\Users\vimal\OneDrive\Desktop\3301.png" alt="Phone" style="width:30px; height:30px;">
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+918247720306">+91 8247720306</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h3>Send Message</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <p class="footer-tagline">
+                            © 2025 Vimal Vijju | 
+                            <i class="fas fa-heart heart-icon"></i>
+                            Crafted with passion using HTML, CSS & JavaScript
+                        </p>
+                        
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="copyright-section">
+                            <h4>Legal Information</h4>
+                            <p>All rights reserved. No part of this portfolio may be reproduced, distributed, or transmitted without prior written permission.</p>
+                        </div>
+                        <div class="copyright-section">
+                            <h4>Technology Stack</h4>
+                            <p>Built with modern web technologies: HTML5, CSS3, JavaScript ES6+, Font Awesome Icons, Google Fonts.</p>
+                        </div>
+                        <div class="copyright-section">
+                            <h4>Third-Party Resources</h4>
+                            <p>Profile images sourced from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>. Icons provided by <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>.</p>
+                        </div>
+                        <div class="copyright-section">
+                            <h4>Privacy & Terms</h4>
+                            <p>This portfolio is for professional purposes only. Contact information is provided for legitimate business inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
